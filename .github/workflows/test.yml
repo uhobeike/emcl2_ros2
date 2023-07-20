@@ -18,6 +18,7 @@ jobs:
             ros-$ROS_DISTRO-turtlebot3-gazebo 
       - name: build
         run: | 
+          mkdir -p /root/ros2_ws/src/emcl2_ros2/
           rsync -av ./ /root/ros2_ws/src/emcl2_ros2/
           cd /root/ros2_ws
           source /opt/ros/$ROS_DISTRO/setup.bash
