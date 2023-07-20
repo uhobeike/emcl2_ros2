@@ -3,7 +3,7 @@
 ros2 daemon stop
 ros2 daemon start
 
-xvfb-run --auto-servernum -s "-screen 0 1400x900x24" ros2 launch emcl2 test.launch.xml &
+ros2 launch emcl2 test.launch.xml &
 sleep 30
 
 ### ESTIMATION RECOVERY TEST ###
@@ -13,7 +13,7 @@ header:
   stamp:
     sec: 0
     nanosec: 0
-  frame_id: 'map'
+  frame_id: ''
 pose:
   pose:
     position: {x: -2.5, y: 0.0, z: 0.0}
